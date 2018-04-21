@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Swamp Special Newsletter</title>
+    <!--This will link the javascript file-->
+    <script src="formcheck.js"></script>
+    <!--This will normalize the site-->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <!--This will link the css file-->
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <!--This will add the fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:900|Josefin+Sans" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--This is the header-->
+    <header>
+        <h1>Subscribe For The Latest Far Far Away News!</h1>
+        <h3>No swamp or castle is too far far away for us. Leave your information here to be connected to the community!</h3>
+    </header>
+
+    <main>
+      <!--This is the form-->
+      <ul>
+        <li><img src="http://3littlebuttons.com/wp-content/uploads/2018/02/hero-lrg-pinocchiogang.png"></li>
+        <li><form id="subscribe">
+          <!--This is the identity section-->
+          <fieldset id="prefix">
+            <legend>You identify yourself as:</legend>
+            <ul>
+              <li><input type="radio" name="identity" id="Ogre" value="Ogre"><label for="Ogre">Ogre</label></li>
+              <li><input type="radio" name="identity" id="Donkey" value="Donkey"><label for="Donkey">Donkey</label></li>
+              <li><input type="radio" name="identity" id="Cat" value="Cat"><label for="Cat">Cat</label></li>
+              <li><input type="radio" name="identity" id="Princess" value="Princess"><label for="Princess">Princess</label></li>
+            </ul>
+          </fieldset>
+
+          <!--This is the personal information section-->
+          <fieldset id="name">
+            <legend>Your Name and Contact:</legend>
+            <div class="textfield">
+              <label for="first_name">First Name:</label>
+              <input id="first_name" type="text" maxlength=30/>
+            </div>
+            <div class="textfield">
+              <label for="last_name">Last Name:</label>
+              <input id="last_name" type="text" maxlength=30/>
+            </div>
+            <div class="textfield">
+              <label for="phone">Phone number:</label>
+              <input id="phone" type="text">
+            </div>
+            <div class="textfield">
+              <label for="email">Email:</label>
+              <input id="email" type="text" maxlength=30/>
+            </div>
+          </fieldset>
+
+          <!--This is the location and code section-->
+          <fieldset id="address">
+            <legend>We will find you at:</legend>
+            <div class="textfield">
+              <label for="home_address" id="home_address_label">Address:</label>
+              <input id="home_address" type="text" maxlength=100/>
+            </div>
+            <div class="textfield">
+              <label for="city" id="city_label">City:</label>
+              <input id="city" type="text" maxlength=20/>
+            </div>
+            <div class="textfield">
+              <label for="area">Area:</label>
+              <select name="area">
+                  <option value="" selected>Select Area</option>
+                  <option value="SW">Swamp</option>
+                  <option value="FA">Far Far Away Kingdom</option>
+                  <option value="DR">Dragon's Keep</option>
+                  <option value="DU">Lordship of Duloc</option>
+                  <option value="SH">Sherwood Forest</option>
+                  <option value="ME">Merlin's Island</option>
+                  <option value="PI">Pirate's Island</option>
+              </select>
+            </div>
+            <div class="textfield">
+              <label for="code" id="code_label">Magic Code:</label>
+              <input id="code" type="text" placeholder="Enter code with no spaces" maxlength=30/>
+              <ul>
+               <li>INSTRUCTION:</li>
+               <li>Enter your favorite Shrek character.</li>
+               <li>1st number: Number of your favorite Shrek movie</li>
+               <li>2nd number: Rate Shrek meme from 1 (the worst) to 5 (the greatest)</li>
+               <li>ex: PussInBoots15
+              </ul>
+            </div>
+          </fieldset>
+
+          <!--This is the instructions section-->
+          <fieldset id="special">
+            <legend>Anything you want to add?</legend>
+            <textarea id="instructions" type="text" placeholder="Enter 'Smash Mouth' for a surprise."></textarea>
+          </fieldset>
+
+          <!--This is to submit the form-->
+          <input type="submit">
+          <!--This is the error section that will display if the form is wrong-->
+          <section id="errors">
+          </section>
+
+        </form>
+      </li>
+      <li><img src="http://www.pngmart.com/files/3/Shrek-PNG-Transparent-Image.png"></li>
+    </ul>
+  </main>
+
+  <!--This is to check the form-->
+  <script>
+        formChecker.initForm(document.querySelector("#subscribe"));
+  </script>
+
+  <!--This will link the audio-->
+  <audio src="sound/allstar.mp3"></audio>
+
+ </body>
+</html>

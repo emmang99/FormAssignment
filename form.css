@@ -1,0 +1,133 @@
+/*This will style the whole body*/
+body {
+    height: 100vh;
+    background-color: #21201F;
+    color: #5D5E5E;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+
+/*This will style the header*/
+header {
+  padding: 3px 0;
+  text-align: center;
+  background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/68/77/4757b3dd9e416f8.jpg');
+}
+
+/*This will style the h1*/
+header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  color: #586629;
+}
+
+/*This will style the h3*/
+header h3 {
+  font-size: 18px;
+  color: #777F59;
+}
+
+/*This will style the list in the whole body*/
+ul {
+  margin-top: 5px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*This will style the images*/
+main img {
+  width: 245px;
+}
+
+/*This will hide the error section*/
+main div.errors{
+  display:none;
+}
+
+/*This will style the form*/
+form {
+  margin: 0 10%;
+  width: 80%;
+}
+
+/*This will set the background for #prefix*/
+#prefix {
+  background: url('http://www.thecolorswatch.com/mm5/graphics/00000001/16-0439%20TCX.jpg');
+}
+
+/*This will set the background for #name*/
+#name {
+  background: url('https://d2d00szk9na1qq.cloudfront.net/Product/165174ef-bc67-44ea-9843-131acf266feb/Images/Large_UP-015.jpg');
+}
+
+/*This will set the background for #address*/
+#address {
+  background: url('https://naldzgraphics.net/wp-content/uploads/2010/09/12-canvas-fabric-texture.jpg');
+}
+
+/*This will set the background for #special*/
+#special {
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/c1/20/e2/c120e2c0d8356eded38d8eb794557d17.jpg');
+}
+
+/*This will style the legends*/
+legend {
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+}
+
+/*This will style the text fields*/
+div.textfield {
+    width: 100%;
+    text-align: center;
+    margin: 3px 0;
+}
+
+/*This will style the text fields' labels*/
+div.textfield label{
+    display: inline-block;
+    text-align: right;
+    margin-right: 8px;
+    width: 25%;
+}
+
+/*This will style the inputs*/
+div.textfield input, div.textfield select{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+/*This will style the list in div only*/
+div ul li {
+  font-size: 10px;
+  padding: 0 10px;
+}
+
+/*This will style the submit button*/
+input[type="submit"]{
+    margin: 10px 0 0 0;
+}
+
+/*This will style the radio button*/
+input[type="radio"]{
+    margin-right: 8px;
+}
+
+/*This will style the #instructions*/
+#instructions{
+    margin: 0 15%;
+    width: 70%;
+    height: 60px;
+}
+
+/*This will style the error messages*/
+#errors {
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+}
